@@ -1,0 +1,17 @@
+syntax = "proto3";
+package fly_formation_proto;
+// leader only
+
+enum FLY_FORMATION{
+    FLY_FORMATION_UNSPECIFIED = 0;
+    FLY_FORMATION_v = 1;
+    FLY_FORMATION_X = 2;
+    FLY_FORMATION_O = 3;
+    FLY_FORMATION_LINE = 4;
+    FLY_FORMATION_ROW = 5;
+    FLY_FORMATION_HEX = 6;
+  }
+  message fly_formation_message{
+    optional float velocity = 1;
+    FLY_FORMATION fly_formation= 2;
+  }

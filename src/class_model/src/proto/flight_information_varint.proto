@@ -1,0 +1,10 @@
+syntax = 'proto3';
+package flight_information_proto_varint;
+// GPS + compass
+
+message flight_information_message {
+    optional uint32 LAT = 1;
+    optional uint32 LON = 2;
+    optional uint32 ALT = 3;
+    optional uint32 heading = 4;
+}

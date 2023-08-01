@@ -1,0 +1,14 @@
+syntax = 'proto3';
+package flight_information_proto;
+// GPS + compass
+
+message GPS {
+    optional float LAT = 1;
+    optional float LON = 2;
+    optional float ALT = 3;
+}
+
+message flight_information_message {
+    GPS gps = 1;
+    optional float heading = 2;
+}

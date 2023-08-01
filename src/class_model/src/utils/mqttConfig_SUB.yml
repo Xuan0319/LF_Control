@@ -1,0 +1,21 @@
+MQTT:
+  msg_format: Proto
+  MQTTClientNameSub: Drone550Sub
+  host: 192.168.50.117
+  port: 1883
+  keepalive: 60
+  willTopic: CheckDoneConnect
+  willTopicQOS: 1
+  lwt: Dron550 Gone Offline
+  willRetain: False
+  # Mqtt topic
+  Flight_Information_topicToMqtt: leader/Flight_Information
+  Fly_Formation_topicToMqtt: leader/Formation
+  # Change formate qos
+  Fly_Formation_topicToMqtt_QOS: 2
+ROS:
+  ROSClientNameSub: Drone550Sub
+  ROStopicName_Flight_Information: Flight_Information_reciver
+  ROStopicName_Fly_Formation: Fly_Formation_reciver
+LOG:
+  logFileName: sub.log

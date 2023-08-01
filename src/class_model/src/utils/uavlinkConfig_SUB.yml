@@ -1,0 +1,10 @@
+UAVLINK:
+  uavlink_msg_format: Proto
+  uav_id: \x01\x01
+  baudrate: 250000
+  ttyport: /dev/ttyTHS1
+ROS:
+  ROSClientNameSub: Drone550UAVLINKSub
+  ROStopicName_Flight_Information: Flight_Information_Uavlink_reciver
+LOG:
+  logFileName: UAVLINKsub.log
